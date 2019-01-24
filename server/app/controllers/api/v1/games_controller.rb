@@ -15,10 +15,16 @@ class Api::V1::GamesController < ApplicationController
     render json: @game, status: :created
   end
 
+  def update
+    @game = Game.find(params[:id])
+    @game.update(game_params)
+    render json: @game
+  end
+
   private
 
   def game_params
-    params.require(:game).permit(:user_id, :win)
+    params.require(:game).permit(:user_id, :first_win, :second_win)
   end
 
 end

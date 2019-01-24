@@ -2,13 +2,13 @@ Rails.application.routes.draw do
 
   namespace :api do
     namespace :v1 do
-      resources :users, only: [:index, :show, :create]
+      resources :users, except: :destroy
     end
   end
 
   namespace :api do
     namespace :v1 do
-      resources :games, only: [:index, :show, :create]
+      resources :games, except: :destroy
     end
   end
 
