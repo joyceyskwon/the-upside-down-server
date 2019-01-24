@@ -320,7 +320,13 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function playBGMusic() {
-    return document.getElementById("bg_music").play()
+      const audio = document.getElementById("bg_music").play()
+      const slider = document.querySelector(".slider-wrapper")
+      slider.addEventListener('onclick', () => {
+      
+        console.log(e.target)
+      })
+
   }
 
   /*************** END HELPER **********************************/
