@@ -52,18 +52,66 @@ audio {
 }
 
 .slider-wrapper {
+  width: 100%;
+}
+
+
+
+.slider {
+  -webkit-appearance: none;
+  position: fixed;
+  padding-right: 20px;
+  top:0px;
+  left:0;
+  right:0;
+  display: inline-block;
+  width: 125px;
+  height: 15px;
+  background: #d3d3d3;
+  outline: none;
+  opacity: 0.3;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  transform: rotate(-90deg);
+  transform-origin: 75px 75px;
+}
+
+.slider:hover {
+  opacity: 1;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  background: red;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  background: #4CAF50;
+  cursor: pointer;
+}
+
+/* .slider-wrapper {
   display: inline-block;
   width: 20px;
   height: 150px;
   padding: 0;
+  background-color: red;
 }
 .slider-wrapper input {
   width: 150px;
   height: 20px;
   margin: 0;
+  color: red;
+
   transform-origin: 75px 75px;
   transform: rotate(-90deg);
-}
+} */
 
 .typewriter h1 {
   font-family: 'Permanent Marker', cursive;

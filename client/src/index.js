@@ -320,14 +320,21 @@ document.addEventListener('DOMContentLoaded', () => {
   }
 
   function playBGMusic() {
-      const audio = document.getElementById("bg_music").play()
+      const audio = document.getElementById("bg_music")
+      audio.play()
       const slider = document.querySelector(".slider-wrapper")
-      slider.addEventListener('onclick', () => {
-      
-        console.log(e.target)
+      slider.addEventListener('input', (e) => {
+          audio.volume = e.target.value/100
+
       })
 
   }
+
+
+
+
+
+
 
   /*************** END HELPER **********************************/
 
