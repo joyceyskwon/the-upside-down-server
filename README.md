@@ -1,18 +1,22 @@
 # The Upside Down: The Back End
 
-![](https://media.giphy.com/media/9Dm6LI9XJ5KCD8zC3R/giphy.gif)
+![demo](https://media.giphy.com/media/9Dm6LI9XJ5KCD8zC3R/giphy.gif)
 
 Ready to enter The Upside Down? The Upside Down is a game inspired by the Netflix TV series Stranger Things, featuring two characters from the series: Eleven and Demogorgon.
 
-Tip: Please use headphones for optimal experience!
+The back-end API handles keeping track of user's score.
 
-## How to start the game
+## Game Instruction
+
 1. Click the logo to log in
 2. Type in the username
 3. Carefully read the rules
 4. And off you go!
 
-## Game rules
+Tip: Please use headphones for optimal experience!
+
+## Game Rules
+
 1. Hiding behind one of three doors is a Demogorgon.
 2. Your mission is to open two of the doors without running into a Demogorgon.
 3. If you manage to avoid the Demogorgon until you open the very last door, you win!
